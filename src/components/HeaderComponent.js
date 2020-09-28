@@ -19,19 +19,19 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <Jumbotron fluid className="p-0">
+                <Jumbotron fluid className="warning">
                     <Container>
                         <Row>
-                            <Col className='col-9 col-md-12'>
-                                <Col className='col-12 col-md-4'>
+                            <Col className='col-9 col-md-4'>
+                                <Col className='col-12'>
                                     <NavbarBrand href="/" className="mr-auto"><img src="/assets/images/logo2.png" height="120"  alt="Turn of Phrase" /></NavbarBrand>
                                 </Col>
-                                <Col className="col-12 Col-md-8 TitleText">
+                                <Col className="col-12 TitleText  center-block">
                                     <h2>TURN OF PHRASE</h2>
-                                    <p>Mobile Brain Teaaser Game</p>
+                                    <p>Mobile Brain Teaser Game</p>
                                 </Col>
                             </Col>
-                            <Col className="col-3 col-md-12">
+                            <Col className="col-3 col-md-8">
                                 <NavModal />
                             </Col>
                         </Row>

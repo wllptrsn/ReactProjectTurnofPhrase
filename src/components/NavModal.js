@@ -23,64 +23,65 @@ class NavModal extends Component {
                 <Button outline onClick={this.toggleModal} className='d-inline d-md-none'>
                     <i className="fa fa-bars" />
                 </Button>
-                <Modal isOpen={this.state.isModalOpen} navbar>
+                <Modal isOpen={this.state.isModalOpen} navbar >
                     <ModalHeader>
-                        <Button outline onClick={this.toggleModal}><i className='fa fa-times'/></Button>
+                        <Button outline onClick={this.toggleModal}
+                        ><i className='fa fa-times' /></Button>
                     </ModalHeader>
-                    <Nav navbar>
+                    <Nav navbar className="TitleText align-self-center">
                         <NavItem>
                             <NavLink className="nav-link" to="/home">
-                                <i className="fa fa-home fa-lg" /> Home
+                                Home
                                     </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link" to="/about">
-                                <i className="fa fa-list fa-lg" /> About
+                                About
                                     </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link" to="/aboutus">
-                                <i className="fa fa-info fa-lg" /> Demo
+                                Demo
                                     </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link" to="/team">
-                                <i className="fa fa-info fa-lg" /> Team
+                                Team
                                     </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link" to="/feedback">
-                                <i className="fa fa-address-card fa-lg" />Feedback
+                                Feedback
                                     </NavLink>
                         </NavItem>
                     </Nav>
                 </Modal>
                 <Navbar dark className=' d-none d-md-inline'>
                     <div className="container-fluid">
-                        <Nav className="navbar navbar-default">
+                        <Nav className="navbar navbar-default TitleText">
                             <NavItem >
                                 <NavLink className="nav-link" to="/home">
-                                    <i className="fa fa-home fa-lg" /> Home
+                                    Home
                                     </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to="/about">
-                                    <i className="fa fa-list fa-lg" /> About
+                                    About
                                     </NavLink>
                             </NavItem>
                             <NavItem >
                                 <NavLink className="nav-link" to="/aboutus">
-                                    <i className="fa fa-info fa-lg" /> Demo
+                                    Demo
                                     </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to="/team">
-                                    <i className="fa fa-info fa-lg" /> Team
+                                    Team
                                     </NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to="/feedback">
-                                    <i className="fa fa-address-card fa-lg" />Feedback
+                                    Feedback
                                     </NavLink>
                             </NavItem>
                         </Nav>
