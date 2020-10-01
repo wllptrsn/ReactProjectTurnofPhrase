@@ -40,7 +40,7 @@ class NavModal extends Component {
                                     </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink onClick={this.toggleModal} className="nav-link" to="/demo">
+                            <NavLink onClick={this.toggleModal} className="nav-link" to="/aboutus">
                                 Demo
                                     </NavLink>
                         </NavItem>
@@ -70,7 +70,7 @@ class NavModal extends Component {
                                     </NavLink>
                             </NavItem>
                             <NavItem >
-                                <NavLink className="nav-link" to="/demo">
+                                <NavLink className="nav-link" to="/aboutus">
                                     Demo
                                     </NavLink>
                             </NavItem>
