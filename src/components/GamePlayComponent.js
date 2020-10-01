@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, FormGroup, Label, Input } from 'reactstrap'
+//import { Form, FormGroup, Label, Input } from 'reactstrap'
 import { PROMPTS } from './prompts';
 class GamePlay extends Component {
     constructor(props) {
@@ -16,19 +16,23 @@ class GamePlay extends Component {
                 number: this.state.number + 1
             })
         }
-        else{
-            alert('That Concludes the available Demo');
+        else {
             this.setState({
-                number:0
+                number: 0
             })
         }
     }
 
     render() {
+        var tiles = this.state.prompts[this.state.number].tiles;
+        var rendertiles = tiles.map(tile => tile);
         return (
             <React.Fragment>
                 <h2>{this.state.prompts[this.state.number].answer}</h2>
+                <img src={this.state.prompts[this.state.number].image} width="300" alt="sad." />
                 <button onClick={this.toggleNav}> NEXT </button>
+                <h2>{rendertiles}</h2>
+
             </React.Fragment>
         );
     }

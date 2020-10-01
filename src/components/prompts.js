@@ -1,26 +1,23 @@
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 export const PROMPTS = [
     {
-        id:0,
-        image: "/assets/images/logo2.png",
+        image: "/assets/images/foodforthought.gif",
         answer:'FOODFORTHOUGHT',
         userAnswer: [],
-        tiles:[4, 3, 7],
-        featured: false
+        tiles:[4, 3, 7]
     },
     {
-        id:1,
-        image: "/assets/images/logo2.png",
+        image: "/assets/images/curiosity.gif",
         answer:'CURIOSITYKILLEDTHECAT',
         userAnswer: [],
         tiles:[9, 6, 3, 3],
-        featured: false
+        head:<h2>fuck</h2>
     },
     {
-        id:2,
-        image: "/assets/images/logo2.png",
+        image: "/assets/images/talldrink.gif",
         answer:'TALLDRINKOFWATER',
         userAnswer: [],
-        tiles:[4, 5, 2, 5],
-        featured: true
+        tiles:[4, 5, 2, 5]
     }
 ];
