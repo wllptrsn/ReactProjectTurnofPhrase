@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent.js';
 import Footer from './FooterComponent.js';
-import { Switch, Route } from 'react-router-dom';
-import { PROMPTS } from './prompts.js';
+import { Switch, Route, Redirect} from 'react-router-dom';
 import Home from './HomeComponent';
 import About from './AboutComponent';
 import Team from './TeamComponent';
@@ -24,6 +23,7 @@ class Main extends Component {
                     <Route path='/team' component={Team}/>
                     <Route exact path='/feedback' component={Feedback} />
                     <Route exact path='/demo' component={GamePlay}/>
+                    <Redirect to="/home" />
                 </Switch>
                 <Footer />
             </React.Fragment>

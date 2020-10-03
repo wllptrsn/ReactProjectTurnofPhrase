@@ -5,19 +5,35 @@ export const PROMPTS = [
         image: "/assets/images/foodforthought.gif",
         answer:'FOODFORTHOUGHT',
         userAnswer: [],
-        tiles:[4, 3, 7]
+        total:7,
+        tiles: <div className='tileRapper'>
+            <div></div><div></div><div></div><div></div><br></br>
+            <div></div><div></div><div></div><br></br>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
     },
     {
         image: "/assets/images/curiosity.gif",
         answer:'CURIOSITYKILLEDTHECAT',
         userAnswer: [],
-        tiles:[9, 6, 3, 3],
-        head:<h2>fuck</h2>
+        total: 21,
+        tiles: <div className='tileRapper'>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><br></br>
+            <div></div><div></div><div></div><div></div><div></div><div></div><br></br>
+            <div></div><div></div><div></div><br></br>
+            <div></div><div></div><div></div>
+        </div>
     },
     {
         image: "/assets/images/talldrink.gif",
         answer:'TALLDRINKOFWATER',
         userAnswer: [],
-        tiles:[4, 5, 2, 5]
+        total: 16,
+        tiles: <div className='tileRapper'>
+            <div></div><div></div><div></div><div></div><br></br>
+            <div></div><div></div><div></div><div></div><div></div><br></br>
+            <div></div><div></div><br></br>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
     }
 ];
