@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent.js';
-import Footer from './FooterComponent.js';
+import Footer from './FooterComponent2.js';
 import { Switch, Route, Redirect} from 'react-router-dom';
 import Home from './HomeComponent';
 import About from './AboutComponent2';

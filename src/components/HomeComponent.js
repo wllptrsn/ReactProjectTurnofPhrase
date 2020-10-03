@@ -21,7 +21,7 @@ class Home extends Component {
                                 <NavLink className="nav-link" to="/about"><Button color="warning">Tell me More</Button> </NavLink>
                             </Col>
                             <Col md="6">
-                                <NavLink className="nav-link" to="/demo"><Button color="warning">Play Demo</Button> </NavLink>
+                                <NavLink className="nav-link" to="/demo"><Button  color="warning">Play Demo</Button> </NavLink>
                             </Col>
                         </Row>
                     </CardBody>
