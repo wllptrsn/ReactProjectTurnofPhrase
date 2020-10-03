@@ -39,23 +39,35 @@
 .TitleText{
   font-family: 'Sigmar One', cursive;
 }
-.tileRapper div{
-  background-color:#ff0000;
+.tileRapper div {
+  background-color:#ffffff;
+  border: 2px solid black;
   height:40px;
   width:25px;
   text-align:center;
   display:inline-block;
   margin:5px;
+  position:relative;
+  font-weight:bold;
+  
 }
-.keyboard button{
+.keyboard{
+  margin-top:20px;
+}
+.keyboard Button{
   background-color:#404040;
   color:#ffffff;
   border: 1px solid black;
-  height:30px;
-  width:30px;
+  height:40px;
+  width:40px;
+  margin:2px;
   text-align:center;
   display:inline-block;
-  margin:none;
-
-  }
+ }
+ .keyboard button:hover{
+   background-color:orange;
+ }
+ .Button{
+   display:none;
+ }
 @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');

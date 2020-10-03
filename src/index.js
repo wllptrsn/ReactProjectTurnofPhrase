@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'font-awesome/css/font-awesome.css';
-import './App.css';
 import 'bootstrap-social/bootstrap-social.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

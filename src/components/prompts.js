@@ -3,37 +3,40 @@ import { render } from 'react-dom';
 export const PROMPTS = [
     {
         image: "/assets/images/foodforthought.gif",
-        answer:'FOODFORTHOUGHT',
+        guess: 'F,O,O,D,F,O,R,T,H,O,U,G,H,T',
         userAnswer: [],
-        total:7,
+        total:14,
         tiles: <div className='tileRapper'>
-            <div></div><div></div><div></div><div></div><br></br>
-            <div></div><div></div><div></div><br></br>
-            <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-        </div>
+            <div></div><div></div><div></div><div></div>
+            <div className='firstWord'></div><div></div><div></div>
+            <div className='firstWord'></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>,
+        breaks:[4,7,14]
     },
     {
         image: "/assets/images/curiosity.gif",
-        answer:'CURIOSITYKILLEDTHECAT',
+        guess:'C,U,R,I,O,S,I,T,Y,K,I,L,L,E,D,T,H,E,C,A,T',
         userAnswer: [],
         total: 21,
         tiles: <div className='tileRapper'>
-            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><br></br>
-            <div></div><div></div><div></div><div></div><div></div><div></div><br></br>
-            <div></div><div></div><div></div><br></br>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
             <div></div><div></div><div></div>
-        </div>
+            <div></div><div></div><div></div>
+        </div>,
+        breaks:[9,15,18,21]
     },
     {
         image: "/assets/images/talldrink.gif",
-        answer:'TALLDRINKOFWATER',
+        guess:'T,A,L,L,D,R,I,N,K,O,F,W,A,T,E,R',
         userAnswer: [],
         total: 16,
         tiles: <div className='tileRapper'>
-            <div></div><div></div><div></div><div></div><br></br>
-            <div></div><div></div><div></div><div></div><div></div><br></br>
-            <div></div><div></div><br></br>
+            <div></div><div></div><div></div><div></div>
             <div></div><div></div><div></div><div></div><div></div>
-        </div>
+            <div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>,
+        breaks:[4,9,11,16]
     }
 ];
