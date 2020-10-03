@@ -70,4 +70,11 @@
  .Button{
    display:none;
  }
+ .contactImage{
+   max-width:700px;
+ }
+ .form-control{
+   width:80%;
+
+ }
 @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');

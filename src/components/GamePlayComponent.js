@@ -17,39 +17,46 @@ class GamePlay extends Component {
         };
     }
     nextBtn() {
-        
+
         var answer = this.state.prompts[this.state.number].userAnswer;
         var guess = this.state.prompts[this.state.number].guess;
-        if(guess == answer){
-            alert('You are Correct Sir!');
-        }
-        else{alert('Oh No You Aint');}
-        if (this.state.number < 2) {
-            this.setState({
-                number: this.state.number + 1,
-                disabled: true,
-                isCorrectOpen: false
-            })
-
-        }
-        else {
-            this.setState({
-                number: 0,
-                isFinishedOpen: false
-            })
-
-        }
         var tilesContainer1 = document.querySelector('.trythis');
         var tilesContainer2 = tilesContainer1.firstChild;
         var innerTiles = tilesContainer2.childNodes;
-        function goNext() {
+        alert(guess);
+        alert(answer);
+        if (guess = answer) {
+
+            if (this.state.number < 2) {
+                this.setState({
+                    number: this.state.number + 1,
+                    disabled: true,
+                    isCorrectOpen: false
+                })
+                this.toggleCorrect();
+                nextStage();
+                
+
+            }
+            else {
+                this.setState({
+                    number: 0,
+                    isFinishedOpen: false
+                })
+
+            }
+
+        }
+        else { alert('WRONG!'); }
+
+        function nextStage() {
             var i;
             for (i = 0; i < answer.length - 1; i++) {
                 innerTiles[i].nextSibling.innerHTML = '';
                 tilesContainer2.firstChild.innerHTML = '';
+
             }
         }
-        goNext();
     }
     enterLetters(n) {
         var answer = this.state.prompts[this.state.number].userAnswer;
@@ -59,7 +66,6 @@ class GamePlay extends Component {
         var innerTiles = tilesContainer2.childNodes;
         answer.push(n);
         if (answer.length >= total) {
-            alert(answer);
             this.setState({
                 disabled: false
             })
@@ -103,11 +109,11 @@ class GamePlay extends Component {
             this.setState({
                 isCorrectOpen: !this.state.isCorrectOpen
             });
-        }else {
+        } else {
             this.toggleFinished();
-            }
         }
-    
+    }
+
 
     render() {
 
@@ -144,7 +150,7 @@ class GamePlay extends Component {
                     <Button disabled={!this.state.disabled} onClick={() => { this.enterLetters('M') }}>M</Button>
                 </div>
                 <Button className="moveBtn" onClick={this.backBtn}> BACK </Button>
-                <Button className="moveBtn" disabled={this.state.disabled} onClick={this.toggleCorrect}> NEXT </Button>
+                <Button className="moveBtn" disabled={this.state.disabled} onClick={this.nextBtn}> NEXT </Button>
 
                 <Modal isOpen={this.state.isCorrectOpen} toggle={this.toggleCorrect}>
                     <ModalBody>

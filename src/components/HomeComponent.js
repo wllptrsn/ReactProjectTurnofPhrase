@@ -1,23 +1,31 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
+import { Card, CardBody, Row, Col, Button } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="container">
-                    <div className="row">
-                        <div className="col">
-                            <h2>Turn Of Phrase</h2>
-                            <p>
-                                Turn of Phrase is a mobile based brain teaser... blah blah blah... lorem ipsum lorem ipsum. how much text do we beed. this is probably good. what a little more? is this good? we'll try this much.okay.
-                            </p>
-                        </div>
-                        <div className='col'>
-                            <Button>Try Game</Button>
-                            <Button>What the Hell is Turn of Phrase?</Button>
-                        </div>
-                    </div>
-                </div>
+                <Card className="my-5 px-5 pb-5 text-center">
+                    <CardBody>
+                        <Row>
+                            <Col lg="12" className="mb-lg-0 mb-5">
+
+                                <h3 className="font-weight-bold mt-4 mb-3"> Turn of Phrase</h3>
+                                <h2>A Mobile Based Brain Teaser Game</h2>
+                                <p className="text-uppercase" color="primary">Lab Analyst</p>
+
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md="6">
+                                <NavLink className="nav-link" to="/about"><Button color="warning">Tell me More</Button> </NavLink>
+                            </Col>
+                            <Col md="6">
+                                <NavLink className="nav-link" to="/demo"><Button color="warning">Play Demo</Button> </NavLink>
+                            </Col>
+                        </Row>
+                    </CardBody>
+                </Card>
             </React.Fragment>
         );
     }
